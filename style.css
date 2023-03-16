@@ -1,8 +1,72 @@
-body {
-background-color: darkseagreen;
+/*  https://picocss.com/docs/  */
+/*  https://box-shadow.dev/    */
+/*  ttps://tailwindcss.com/    */
+
+/* 
+CSS Structure
+* Rule(s)
+* Selectors (ex:h1)
+* Declarations (What you're declaring it to do)-can have multiple
+* Property: the values-everything to the left of the colon(:)
+* Descendent selection: space
+* Attribute selection: []
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Italiana&display=swap');
+
+h1 {
+  font-family: 'Italiana', serif;
+  color: #B39DDB;
+  font-size: 40px;
+  background: mistyrose;
 }
 
+body {
+  background:  radial-gradient(50% 50% at 50% 50%, #BF1212 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+p{
+  background: red;
+  font-family: 'Comfortaa', cursive;
+  color:#263238;
+  font-size: 15px;
+}
+
+img{width: 50%}
+
+main{
+      background:#CFD8DC;
+    width: 50%;
+  margin: 0 auto;
+}
+
+article p{
+  background: radial-gradient(50% 50% at 50% 50%, #BF1212 0%, rgba(217, 217, 217, 0) 100%);;
+}
 
 img {
-    width:25%;
+  border: 10px solid PapayaWhip;
 }
+
+img#lead-for-site{
+  border: 5px dashed olive;
+}
+
+/* 0,0,1,0 */
+img.shadow{
+  box-shadow: 2px 4px 10px 4px red;
+}
+
+/* 0,0,1,0 */
+.highlight{
+  opacity: 0.25;
+  transition: 1s opacity;
+}
+
+/* 0,0,2,1 */
+img.highlight:hover {
+  opacity: 1;
+}
+
